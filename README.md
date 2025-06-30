@@ -1,6 +1,6 @@
 ### Sample videos
 Trimmed to 60s and reduced to 720 for better use as sample videos in website demos
-### TIPS
+### TIPs
 Use [ffmpeg](https://ffmpeg.org/download.html) to trim to 60s:
 ```
 ffmpeg -y -ss 30 -i "BigBuckBunny.mp4" -t 60 -c copy "60s/BigBuckBunny.mp4"
