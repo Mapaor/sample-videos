@@ -1,25 +1,20 @@
-# Defineix la ruta a la carpeta assets
 $assetsPath = "gtv-videos-bucket" # ONLY CHANGE THIS AND RUN THIS SCRIPT FROM POWERSHELL TERMINAL IN THE PARENT DIRECTORY
 $indexFile = Join-Path $assetsPath "index.html"
 
-# Extensions acceptades
 $imageExt = @(".png", ".jpg", ".jpeg", ".svg")
 $videoExt = @(".mp4")
 
-# Llegeix fitxers
 $allFiles = Get-ChildItem -Path $assetsPath -File
 
-# Separa imatges i vídeos
 $imageFiles = $allFiles | Where-Object { $imageExt -contains $_.Extension.ToLower() }
 $videoFiles = $allFiles | Where-Object { $videoExt -contains $_.Extension.ToLower() }
 
-# Comença a escriure l'HTML
 $htmlContent = @"
 <!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>Index de fitxers multimèdia</title>
+    <title>Media files index</title>
     <style>
         body { font-family: sans-serif; padding: 20px; }
         ul { list-style: none; padding-left: 0; }
@@ -29,16 +24,14 @@ $htmlContent = @"
     </style>
 </head>
 <body>
-    <h1>Llistat de fitxers multimèdia</h1>
+    <h1>Media files list</h1>
     <ul>
 "@
 
-# Afegeix imatges amb miniatura
 foreach ($file in $imageFiles) {
     $htmlContent += "        <li><a href='$($file.Name)'>$($file.Name)</a><img src='$($file.Name)' class='emoji' alt='emoji'></li>`n"
 }
 
-# Afegeix vídeos amb miniatura estilitzada (sense controls)
 foreach ($file in $videoFiles) {
     $htmlContent += "        <li><a href='$($file.Name)'>$($file.Name)</a><video src='$($file.Name)' class='video-thumb' muted loop playsinline></video></li>`n"
 }
@@ -49,7 +42,6 @@ $htmlContent += @"
 </html>
 "@
 
-# Escriu el fitxer HTML
 $htmlContent | Set-Content -Encoding UTF8 $indexFile
 
-Write-Host "S'ha generat l'index.html amb $($imageFiles.Count) imatge(s) i $($videoFiles.Count) vídeo(s)."
+Write-Host "index.html generated with $($imageFiles.Count) images and $($videoFiles.Count) videos."
