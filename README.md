@@ -1,11 +1,12 @@
 ### Sample videos
 Trimmed to 60s and reduced to 720 for better use as sample videos in website demos.
-### TIPs
-Use [ffmpeg](https://ffmpeg.org/download.html) to trim to 60s:
+- [60s-720p](./60s-720p)
+### Tools used
+Used [ffmpeg](https://ffmpeg.org/download.html) to trim to 60s:
 ```
 ffmpeg -y -ss 30 -i "BigBuckBunny.mp4" -t 60 -c copy "60s/BigBuckBunny.mp4"
 ```
-Or to convert quality to 720p if needed:
+And to convert quality to 720p if needed:
 ```
 ffmpeg -i "BigBuckBunny.mp4" -vf "scale=-1:720" -c:v libx264 -crf 23 -preset fast -c:a copy "720p/BigBuckBunny.mp4"
 ```
