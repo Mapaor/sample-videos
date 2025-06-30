@@ -1,5 +1,5 @@
 # Defineix la ruta a la carpeta assets
-$assetsPath = "nasa-internet-archive" # ONLY CHANGE THIS AND RUN THIS SCRIPT FROM POWERSHELL TERMINAL IN THE PARENT DIRECTORY
+$assetsPath = "gtv-videos-bucket" # ONLY CHANGE THIS AND RUN THIS SCRIPT FROM POWERSHELL TERMINAL IN THE PARENT DIRECTORY
 $indexFile = Join-Path $assetsPath "index.html"
 
 # Extensions acceptades
@@ -25,10 +25,7 @@ $htmlContent = @"
         ul { list-style: none; padding-left: 0; }
         li { margin: 8px 0; }
         .emoji { width: 24px; height: 24px; vertical-align: middle; margin-left: 8px; }
-        .video-thumb { width: 40px; height: 24px; vertical-align: middle; margin-left: 8px; object-fit: cover; }
-        .gallery, .video-gallery { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 10px; }
-        .gallery img { width: 64px; }
-        .video-gallery video { width: 200px; height: auto; }
+        .video-thumb { width: 80px; height: 48px; vertical-align: middle; margin-left: 8px; object-fit: cover; }
     </style>
 </head>
 <body>
@@ -44,30 +41,6 @@ foreach ($file in $imageFiles) {
 # Afegeix vídeos amb miniatura estilitzada (sense controls)
 foreach ($file in $videoFiles) {
     $htmlContent += "        <li><a href='$($file.Name)'>$($file.Name)</a><video src='$($file.Name)' class='video-thumb' muted loop playsinline></video></li>`n"
-}
-
-# Galeria d’imatges
-$htmlContent += @"
-    </ul>
-
-    <h2>Galeria d’emojis</h2>
-    <div class="gallery">
-"@
-
-foreach ($file in $imageFiles) {
-    $htmlContent += "        <img src='$($file.Name)' alt='$($file.BaseName)'>`n"
-}
-
-# Galeria de vídeos
-$htmlContent += @"
-    </div>
-
-    <h2>Galeria de vídeos</h2>
-    <div class="video-gallery">
-"@
-
-foreach ($file in $videoFiles) {
-    $htmlContent += "        <video src='$($file.Name)' controls></video>`n"
 }
 
 $htmlContent += @"
