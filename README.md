@@ -14,3 +14,5 @@ ffmpeg -i "BigBuckBunny.mp4" -vf "scale=-1:720" -c:v libx264 -crf 23 -preset fas
 Note: 23 is the ICQ (quality of compression). 18-28 is a normal range, being 18 a great quality preset and 28 a poor quality one.
 ### Other
 More NASA videos: [https://archive.org/search?query=creator%3A%22NASA%22&and%5B%5D=mediatype%3A%22movies%22](https://archive.org/search?query=creator%3A%22NASA%22&and%5B%5D=mediatype%3A%22movies%22)
+### Important note
+GitHub Pages is not meant for this. It's speed is bad. If care about speed create a AWS Account. Use S3, create a new general public bucket. Put your files there. As long as you don't exceed 5GB the first year will be free.
