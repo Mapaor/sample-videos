@@ -15,4 +15,4 @@ Note: 23 is the ICQ (quality of compression). 18-28 is a normal range, being 18 
 ### Other
 More NASA videos: [https://archive.org/search?query=creator%3A%22NASA%22&and%5B%5D=mediatype%3A%22movies%22](https://archive.org/search?query=creator%3A%22NASA%22&and%5B%5D=mediatype%3A%22movies%22)
 ### Important note
-GitHub Pages is not meant for this. It's speed is bad. If care about speed create an AWS Account. Use S3, create a new general public bucket. Put your files there. As long as you don't exceed 5GB the first year will be free.
+GitHub Pages is not meant for this. It's speed is bad. If you care about speed create an AWS Account, use S3, and create a new general public bucket. Put your files there, as long as you don't exceed 5GB the first year will be free.
