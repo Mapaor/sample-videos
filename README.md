@@ -17,4 +17,8 @@ More NASA videos: [https://archive.org/search?query=creator%3A%22NASA%22&and%5B%
 ### Important note
 GitHub Pages is not meant for this. It's speed is bad. If you care about speed create an AWS Account, use S3, and create a new general public bucket. Put your files there, as long as you don't exceed 5GB the first year will be free.
 
-Example file: [https://bucket-general-public-marti.s3.eu-west-1.amazonaws.com/60s-720p/gtv-videos-bucket/BigBuckBunny.mp4](https://bucket-general-public-marti.s3.eu-west-1.amazonaws.com/60s-720p/gtv-videos-bucket/BigBuckBunny.mp4)
+Example files (may expire past March 2026): 
+- [https://bucket-general-public-marti.s3.eu-west-1.amazonaws.com/60s-720p/gtv-videos-bucket/BigBuckBunny.mp4](https://bucket-general-public-marti.s3.eu-west-1.amazonaws.com/60s-720p/gtv-videos-bucket/BigBuckBunny.mp4)
+- [https://bucket-general-public-marti.s3.eu-west-1.amazonaws.com/60s-720p/gtv-videos-bucket/ElephantsDream.mp4](https://bucket-general-public-marti.s3.eu-west-1.amazonaws.com/60s-720p/gtv-videos-bucket/ElephantsDream.mp4)
+- [https://bucket-general-public-marti.s3.eu-west-1.amazonaws.com/60s-720p/gtv-videos-bucket/Sintel.mp4](https://bucket-general-public-marti.s3.eu-west-1.amazonaws.com/60s-720p/gtv-videos-bucket/Sintel.mp4)
+- [https://bucket-general-public-marti.s3.eu-west-1.amazonaws.com/60s-720p/gtv-videos-bucket/TearsOfSteel.mp4](https://bucket-general-public-marti.s3.eu-west-1.amazonaws.com/60s-720p/gtv-videos-bucket/TearsOfSteel.mp4)
