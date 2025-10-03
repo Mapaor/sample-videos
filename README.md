@@ -18,7 +18,7 @@ More NASA videos: [https://archive.org/search?query=creator%3A%22NASA%22&and%5B%
 GitHub Pages is not meant for this. It's speed is bad. If you care about speed you should use a bucket for storage in the cloud.
 
 #### With Appwrite
-Create an account, create a project, create a bucket, in settings enable file security, start putting files. 5GB free for everyone 150GB for students (it's a lot!).
+Create an account, create a project, create a bucket, enable read permissions for guests, start putting files. 5GB free for everyone 150GB for students (it's a lot!).
 
 Examples files:
 - [https://fra.cloud.appwrite.io/v1/storage/buckets/68df9793002427da7d64/files/68df9d6a00026bdaf13d/view?project=68df9779001407928a77](https://fra.cloud.appwrite.io/v1/storage/buckets/68df9793002427da7d64/files/68df9d6a00026bdaf13d/view?project=68df9779001407928a77)
