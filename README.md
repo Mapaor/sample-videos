@@ -20,7 +20,11 @@ GitHub Pages is not meant for this. It's speed is bad. If you care about speed y
 #### With Appwrite
 Create an account, create a project, create a bucket, in settings enable file security, start putting files. 5GB free for everyone 150GB for students (it's a lot!).
 
-Examples:
+Examples files:
+- [https://fra.cloud.appwrite.io/v1/storage/buckets/68df9793002427da7d64/files/68df9d6a00026bdaf13d/view?project=68df9779001407928a77](https://fra.cloud.appwrite.io/v1/storage/buckets/68df9793002427da7d64/files/68df9d6a00026bdaf13d/view?project=68df9779001407928a77)
+- [https://fra.cloud.appwrite.io/v1/storage/buckets/68df9793002427da7d64/files/68df9d6200202fe24bcf/view?project=68df9779001407928a77](https://fra.cloud.appwrite.io/v1/storage/buckets/68df9793002427da7d64/files/68df9d6200202fe24bcf/view?project=68df9779001407928a77)
+- [https://fra.cloud.appwrite.io/v1/storage/buckets/68df9793002427da7d64/files/68df9d57000de73c62c8/view?project=68df9779001407928a77](https://fra.cloud.appwrite.io/v1/storage/buckets/68df9793002427da7d64/files/68df9d57000de73c62c8/view?project=68df9779001407928a77)
+- [https://fra.cloud.appwrite.io/v1/storage/buckets/68df9793002427da7d64/files/68df9d490033f2bbf8f7/view?project=68df9779001407928a77](https://fra.cloud.appwrite.io/v1/storage/buckets/68df9793002427da7d64/files/68df9d490033f2bbf8f7/view?project=68df9779001407928a77) 
 
 
 #### With S3
